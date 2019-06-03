@@ -1,0 +1,21 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+	  "communicator": "ssh",
+	  "ssh_private_key_file": "example_key",
+	  "ssh_username": "ec2-user",
+      "access_key": "AKIAJOFKGTDMZORFSY2A",
+      "secret_key": "gHSAt3Tdm/0vv39s1l1XgaRvrz6us6ZCzu82Q2gS",
+      "region": "US East (Ohio)",
+      "source_ami": "ami-0b20742937940a026",
+	  "ssh_keypair_name": "packer-example",
+	  
+      "instance_type": "t2.micro",
+	  "ami_name": "packer-example-01"
+	  "subnet_id": "subnet-7fceb805"
+      "vpc_id": "vpc-48d9c920"
+      
+    }
+  ]
+}
